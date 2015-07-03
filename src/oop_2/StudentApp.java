@@ -7,26 +7,24 @@ public class StudentApp {
     public static void main(String[] args) {
         int [] marks = new int[10];
 
-        Student student = new Student(5, "Ivanov" );
-        Student studentCopy = new Student(student);
-        Student student1 = new Student();
+        Student student1 = new Student(0, "Ivanov" );
+        Student student2 = new Student(1, "Petrov");
+        student1.setMark(2,5);
+        student2.setMark(6, 4);
 
-        System.out.println(student.getId());
-        System.out.println(student.getSurname());
-        System.out.println(student.getMarks());
+       // System.out.println(student1.getId());
+       // System.out.println(student1.getSurname());
+        System.out.println(student1.getMark(2));
 
-        System.out.println();
-/*
-        System.out.println(studentCopy.id);
-        System.out.println(studentCopy.surname);
-        System.out.println(studentCopy.marks);
+     /*
+        System.out.println(student2.id);
+        System.out.println(student2.surname);
+        System.out.println(student2.marks);
+    */
 
-        System.out.println();
-
-        */
-
-       // student.id = 99;
-
+    Group group = new Group();
+        group.addStudent(student1);
+        group.addStudent("Sidorov");
 
 
     }
