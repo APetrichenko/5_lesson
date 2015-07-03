@@ -27,4 +27,10 @@ public class Group {
         Student student = new Student(numOfStudents, surname);
         addStudent(student);
     }
+
+    public void print() {
+        for(Student st: students){
+            System.out.println(st.getId() + " " + st.getSurname());
+        }
+    }
 }

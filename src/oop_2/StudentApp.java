@@ -25,6 +25,7 @@ public class StudentApp {
     Group group = new Group();
         group.addStudent(student1);
         group.addStudent("Sidorov");
+        group.print();
 
 
     }
