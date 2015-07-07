@@ -14,7 +14,7 @@ public class StudentApp {
 
        // System.out.println(student1.getId());
        // System.out.println(student1.getSurname());
-        System.out.println(student1.getMark(2));
+        //System.out.println(student1.getMark(2));
 
      /*
         System.out.println(student2.id);
@@ -22,8 +22,9 @@ public class StudentApp {
         System.out.println(student2.marks);
     */
 
-    Group group = new Group();
+        Group group = new Group();
         group.addStudent(student1);
+        group.addStudent(student2);
         group.addStudent("Sidorov");
         group.print();
 

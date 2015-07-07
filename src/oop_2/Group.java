@@ -14,7 +14,7 @@ public class Group {
         }else{
             Student[] newStudents = new Student[students.length * 2];
             for(int i = 0;i < students.length;i++){
-                newStudents[i]=students[i];
+                newStudents[i] = students[i];
             }
             newStudents[numOfStudents] = student;
             numOfStudents++;
@@ -29,8 +29,8 @@ public class Group {
     }
 
     public void print() {
-        for(Student st: students){
-            System.out.println(st.getId() + " " + st.getSurname());
+        for(int i=0; i<numOfStudents;i++){
+            System.out.println(students[i].getId() + " " + students[i].getSurname()+"\n");
         }
     }
 }
